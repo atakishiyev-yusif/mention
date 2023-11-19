@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="">İş elanları</a>
+            <a href="">Frilanserlər</a>
+            <a href="">Haqqımızda</a>
+            <a href="./login.html">Elan yerləşdir</a>
+          </nav>
+          <div class="header-search flex items-center px-6 px-3">
+            <input type="text" placeholder="Axtarış" class="input" />
+            <div>
+              <img src="./assets/icons/search-normal.svg" alt="" />
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="registration">
+      <div class="flex items-center justify-center registration-card">
+        <div
+          class="registration-content justify-center flex items-center flex-col gap-6"
+        >
+          <h1>Qeydiyyat</h1>
+          <p>
+            ⁨⁨Müştəri və ya frilanser olaraq qeydiyyatdan keç
+          </p>
+
+          <div class="flex items-center gap-4">
+            <div
+              id="registration-box-customer"
+              class="registration-box primary-registration-box flex items-center justify-center"
+            >
+              <span>
+                Elan paylaşmaq istəyirəm.
+              </span>
+            </div>
+            <div
+              id="registration-box-freelancer"
+              class="registration-box secondary-registration-box flex items-center justify-center"
+            >
+              <span>
+                Frilans iş tapmaq istəyirəm.
+              </span>
+            </div>
+          </div>
+          <span class="text-xs registration-link"
+            >⁨⁨⁨Hesabın yoxdur?
+            <a href="./login.html">Hesabın var? Daxil ol</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

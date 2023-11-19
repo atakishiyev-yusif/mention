@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./frilanserler.html">Frilanserlər</a>
+            <a href="./haqqimizda.html">Haqqımızda</a>
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="header-search flex items-center px-6 px-3">
+            <input type="text" placeholder="Axtarış" class="input" />
+            <div>
+              <img src="./assets/icons/search-normal.svg" alt="" />
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="is-elanlari-page">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="#">Ana səhifə</a>
+          <span>/</span>
+          <a href="#" class="active">İş Elanları</a>
+        </div>
+        <div class="search-bar flex items-center justify-between">
+          <input type="text" class="input" placeholder="Açar söz daxil et" />
+          <img
+            src="./assets/icons/search-normal.svg"
+            alt="search-normal-icon"
+          />
+        </div>
+
+        <!-- elan yerlesdir card -->
+        <div
+          class="elan-yerlesdir-card px-12 py-9 mt-8 flex items-center justify-between"
+        >
+          <div>
+            <h3 class="mb-2">Sən də frilanser axtarırsan?</h3>
+            <p>
+              Upwork makes it affordable to up your work and take advantage of
+              low transaction rates.
+            </p>
+          </div>
+          <button type="button" class="font-semibold">
+            Elan yerləşdir
+          </button>
+        </div>
+
+        <!-- son elanlar -->
+        <section id="son-elanlar" class="mt-9">
+          <h2 class="mb-6">
+            Son elanlar
+          </h2>
+          <div
+            class="flex items-center justify-between son-elanlar-filter mb-8"
+          >
+            <div class="flex items-center gap-3">
+              <button
+                class="px-8 py-3 flex items-center justify-between gap-2"
+                type="button"
+              >
+                Kateqoriyalar
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </button>
+              <button
+                class="px-8 py-3 flex items-center justify-between gap-2"
+                type="button"
+              >
+                Əmək haqqı
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </button>
+              <button
+                class="px-8 py-3 flex items-center justify-between gap-2"
+                type="button"
+              >
+                Tarix
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </button>
+              <button
+                class="px-8 py-3 flex items-center justify-between gap-2"
+                type="button"
+              >
+                Müraciət sayı
+                <span>
+                  <img
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow-right-icon"
+                  />
+                </span>
+              </button>
+              <button
+                class="px-8 py-3 font-semibold clear-filters-button"
+                type="button"
+              >
+                Filterləri təmizlə
+              </button>
+            </div>
+            <button
+              class="px-8 py-3 flex items-center justify-between gap-2"
+              type="button"
+            >
+              Sıralama
+              <span>
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="arrow-right-icon"
+                />
+              </span>
+            </button>
+          </div>
+
+          <!-- son elanlar  -->
+          <div
+            class="son-elanlar-cards flex items-center justify-center flex-wrap gap-6"
+          >
+            <div class="son-elanlar-card son-elanlar-card-primary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div
+                  class="bookmark bookmark-icon-fill p-3 flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+
+            <div class="son-elanlar-card son-elanlar-card-primary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div
+                  class="bookmark bookmark-icon-fill p-3 flex items-center justify-center"
+                >
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+
+            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+
+            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+
+            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+
+            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+
+            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+
+            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="bookmark p-3 flex items-center justify-center">
+                  <img
+                    src="./assets/icons/bookmark.svg"
+                    alt="bookmark-icon"
+                    class="bookmark-icon"
+                  />
+                  <img
+                    src="./assets/icons/crown.svg"
+                    alt="bookmark-icon"
+                    class="crown-icon"
+                  />
+                </div>
+              </div>
+              <div class="son-elanlar-card-amount mt-9 mb-5">
+                <span class="font-medium">50₼</span>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+              <div
+                class="category-cards font-medium flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Deadline: 05.08.2023</span
+                  >
+                </div>
+                <span class="category-card category-card-secondary"
+                  >Ətraflı ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mt-13">
+            <button type="button" class="dashed-button">Daha çox göstər</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container flex items-center justify-between">
+        <span>© 2023 Mention.</span>
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

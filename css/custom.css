@@ -1,0 +1,480 @@
+/* header */
+
+header {
+  height: 64px;
+}
+
+header .header-search {
+  border-radius: 50px;
+  width: 300px;
+  height: 3rem;
+  background-color: var(--secondary-color);
+}
+
+header .header-search input {
+  background: transparent;
+}
+
+header .profile {
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary-color);
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+/* login page*/
+
+#login {
+  background-color: var(--primary-color);
+  height: 90vh;
+}
+
+.login-card {
+  height: 100%;
+}
+
+.login-card .login-content {
+  width: 648px;
+  height: 515px;
+  background-color: var(--secondary-color);
+  padding: 32px 180px;
+  border-radius: 12px;
+}
+
+.login-card .login-content form {
+  width: 100%;
+}
+
+.login-card .login-content form .input-container {
+  width: 100%;
+  background: var(--white);
+  border-radius: 10px;
+  height: 49px;
+  padding: 16px 24px;
+}
+
+.login-card .login-content form .remember-my-account {
+  width: 100%;
+  margin: 12px 0 32px;
+}
+
+.login-card .login-content form button {
+  background-color: var(--primary-color-2);
+  width: 100%;
+  height: 50px;
+  border-radius: 32px;
+  font-weight: 700;
+}
+
+.next-button {
+  background-color: var(--primary-color-2);
+  width: 100%;
+  height: 50px;
+  border-radius: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* registration page */
+
+.registration-link a {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#registration {
+  background-color: var(--primary-color);
+  height: 90vh;
+}
+
+#registration .registration-card {
+  height: 100%;
+}
+
+#registration .registration-card .registration-content {
+  width: 648px;
+  height: auto;
+  background-color: var(--secondary-color);
+  padding: 32px 88px;
+  border-radius: 12px;
+}
+
+#registration .registration-card .registration-content .registration-box {
+  height: 150px;
+  padding: 10px 24px;
+  text-align: center;
+  line-height: normal;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+#registration
+  .registration-card
+  .registration-content
+  .primary-registration-box {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#registration
+  .registration-card
+  .registration-content
+  .secondary-registration-box {
+  background: var(--primary-color-2);
+  color: var(--black);
+}
+
+#registration .login-card .login-content {
+  height: 480px;
+}
+
+/* landing page */
+
+#landing-page h2,
+h3,
+h4 {
+  color: var(--black);
+}
+
+/* hero */
+
+#hero {
+  margin-top: 27.5px;
+}
+
+#hero p {
+  color: var(--white);
+  margin: 27px 0 24px;
+}
+
+#hero .hero-card {
+  border-radius: 12px;
+}
+
+#hero .hero-card-lg {
+  background: url("../assets/images/woman-working-sitting-laptop-top-view-1.png");
+  width: 766px;
+  height: 550px;
+}
+
+#hero .hero-card-lg h1 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 77px;
+}
+
+#hero .hero-card-lg h1 span {
+  color: var(--primary-color-2);
+}
+
+#hero .hero-card-lg .dashed-button {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+#hero .hero-card-md {
+  background: url("../assets/images/woman-working-sitting-laptop-top-view-2.png");
+  width: 564px;
+  height: 351px;
+}
+
+#hero .hero-card-md .stats .stat {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border-radius: 65px;
+}
+
+#hero .hero-card-md .diagram-icon {
+  background-color: var(--primary-color-2);
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border-radius: 9999px;
+}
+
+#hero .hero-card-sm {
+  background: var(--primary-color);
+  width: 564px;
+  height: 185px;
+}
+
+#hero .hero-card-border {
+  border: 1px dashed var(--white);
+  height: 100%;
+  border-radius: 8px;
+  color: var(--white);
+  font-size: var(--text-xl);
+}
+
+#hero .hero-card-border .dashed-button {
+  border-color: var(--primary-color-2);
+  margin-top: 18px;
+  color: var(--primary-color-2);
+}
+
+#hero .messages {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  width: 60%;
+  background-color: var(--secondary-color);
+  padding: 18px 32px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* categories */
+
+.categories-card {
+  width: 400px;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  border-bottom: 1.5px solid var(--black);
+}
+
+.categories-card p {
+  font-size: 14px;
+}
+
+/* why mention */
+
+#why-mention {
+  margin-top: 88px;
+}
+
+.why-card {
+  width: 412px;
+  overflow: hidden;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.why-card-primary {
+  background-color: var(--primary-color);
+}
+
+.why-card-secondary {
+  background-color: var(--primary-color-2);
+}
+
+.why-card-primary .why-card-content h4 {
+  color: var(--white);
+}
+
+.why-card-secondary .why-card-content h4 {
+  color: var(--black);
+}
+
+.why-card-content p {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.why-card-secondary p {
+  color: var(--black);
+}
+
+.why-card-lg {
+  width: 412px;
+  height: 180px;
+}
+
+.tick-circle {
+  margin-bottom: 26px;
+}
+
+/* how do we work */
+
+#how-do-we-work {
+  margin-top: 88px;
+}
+
+.how-do-we-work {
+  width: 660px;
+  height: 349px;
+  background: url("../assets/images/vladyslav-tobolenko-unsplash-2.png");
+  padding: 60px;
+}
+
+.how-do-we-work h2 {
+  font-size: 66px;
+  color: var(--white) !important;
+  width: 12ch;
+}
+
+.how-do-we-work h2 span {
+  color: var(--primary-color-2);
+}
+
+.how-card {
+  background: var(--secondary-color);
+  border-radius: 12px;
+  border-bottom: 1.5px solid var(--primary-color);
+}
+
+.how-card:not(:first-child) {
+  margin-top: 16px;
+}
+
+.how-card h5 {
+  margin-bottom: 6px;
+  font-weight: var(--font-semibold);
+}
+
+.how-card p {
+  font-size: 14px;
+}
+
+.how-card-number {
+  font-size: 48px;
+  color: var(--primary-color);
+  font-weight: var(--font-semibold);
+}
+
+/* customer reviews */
+
+#customer-reviews {
+  margin-top: 88px;
+}
+
+.customer-reviews .customer-review {
+  padding: 32px 32px 24px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 432px;
+  border-radius: 12px;
+}
+
+.company {
+  border-top: 1px dashed var(--white);
+  padding-top: 20px;
+}
+
+.company .company-profile {
+  width: 28px;
+  height: 28px;
+  padding: 7px;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: var(--black);
+}
+
+/* footer */
+
+footer {
+  margin-top: 58px;
+  padding-bottom: 12px;
+}
+
+/* is elanlari page */
+
+.search-bar {
+  border-radius: 50px;
+  width: full;
+  background-color: var(--secondary-color);
+  padding: 16px 40px;
+  margin-top: 28px;
+}
+
+.elan-yerlesdir-card {
+  background-color: var(--primary-color-2);
+  border-radius: 20px;
+}
+
+.elan-yerlesdir-card button {
+  background-color: var(--black);
+  border-radius: 48px;
+  padding: 12px 28px;
+  color: var(--white);
+}
+
+.son-elanlar-filter button:not(.clear-filters-button) {
+  background-color: var(--secondary-color);
+  border-radius: 100px;
+}
+
+.clear-filters-button {
+  color: var(--primary-color);
+}
+
+.son-elanlar-card {
+  width: 620px;
+  border-radius: 12px;
+}
+
+.son-elanlar-card-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.son-elanlar-card-secondary {
+  background-color: var(--secondary-color);
+  color: var(--black);
+  border-bottom: 1px solid var(--Primary-Color-1, #202361);
+}
+
+.son-elanlar-card-secondary .son-elanlar-card-amount {
+  color: var(--black);
+}
+
+.son-elanlar-card-primary h4 {
+  color: var(--white);
+}
+
+.son-elanlar-card-secondary h4 {
+  color: var(--primary-color);
+}
+
+.son-elanlar-card .bookmark {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.son-elanlar-card .bookmark.bookmark-icon-fill {
+  background-color: var(--primary-color-2);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.son-elanlar-card .bookmark .crown-icon {
+  display: none;
+}
+
+.son-elanlar-card .bookmark-icon-fill .crown-icon {
+  display: block;
+}
+
+.son-elanlar-card .bookmark.bookmark-icon-fill .bookmark-icon {
+  display: none;
+}
+
+.son-elanlar-card .company {
+  border: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.son-elanlar-card-amount {
+  font-size: 22px;
+  color: var(--primary-color-2);
+}
+
+.category-cards .category-card {
+  padding: 14px 20px;
+  font-size: 12px;
+  border-radius: 32px;
+}
+
+.category-card-primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.category-card-secondary {
+  background-color: var(--primary-color-2);
+  color: var(--black);
+}

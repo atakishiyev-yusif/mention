@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+
+    <script src="https://accounts.google.com/gsi/client" async></script>
+  </head>
+  <style>
+    html,
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./frilanserler.html">Frilanserlər</a>
+            <a href="./haqqimizda.html">Haqqımızda</a>
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="header-search flex items-center px-6 px-3">
+            <input type="text" placeholder="Axtarış" class="input" />
+            <div>
+              <img src="./assets/icons/search-normal.svg" alt="" />
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="login">
+      <div class="flex items-center justify-center login-card">
+        <div class="login-content flex items-center flex-col gap-6">
+          <h1>Daxil ol</h1>
+          <a class="btn-continue-with-google">
+            <span class="google-icon">
+              <img src="./assets/icons/google-icon.svg" alt="google icon" />
+            </span>
+            Google ilə davam et</a
+          >
+          <div
+            style="width: 100%;"
+            class="flex items-center justify-center gap-3"
+          >
+            <div style="width: 110px;" class="line"></div>
+            <span class="text-xs">və ya</span>
+            <div class="line" style="width: 110px;"></div>
+          </div>
+          <form action="">
+            <div class="input-container flex items-center mb-4">
+              <input
+                class="input"
+                placeholder="İstifadəçi adı / E-poçt ünvanı"
+              />
+            </div>
+            <div class="input-container flex items-center">
+              <input class="input" placeholder="Şifrə" />
+              <img src="./assets/icons/eye-slash.svg" alt="" />
+            </div>
+            <div
+              class="remember-my-account flex items-center justify-between text-xs"
+            >
+              <label>
+                <input type="checkbox" />
+
+                ⁨⁨Hesabımı xatırla</label
+              >
+              <a href="#">Şifrəni unutmusunuz?</a>
+            </div>
+            <button type="button">Daxil ol</button>
+          </form>
+          <span class="text-xs registration-link"
+            >⁨⁨⁨Hesabın yoxdur?
+            <a href="./registration.html">Qeydiyyatdan keç</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
