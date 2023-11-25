@@ -220,9 +220,11 @@ h4 {
   bottom: -2rem;
   right: 0;
   width: 60%;
-  background-color: var(--secondary-color);
-  padding: 18px 32px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px;
+}
+
+.open-messages {
+  height: 200%;
 }
 
 /* categories */
@@ -399,74 +401,60 @@ footer {
   color: var(--primary-color);
 }
 
-.son-elanlar-card {
+.elan-card {
   width: 620px;
   border-radius: 12px;
 }
 
-.son-elanlar-card-primary {
+.elan-card.elan-card-sm {
+  width: 298px;
+  height: 158px;
+  padding: 28px 40px 32px 40px;
+}
+
+.elan-card.elan-card-primary {
   background-color: var(--primary-color);
   color: var(--white);
 }
 
-.son-elanlar-card-secondary {
+.elan-card.elan-card-secondary {
   background-color: var(--secondary-color);
   color: var(--black);
   border-bottom: 1px solid var(--Primary-Color-1, #202361);
 }
 
-.son-elanlar-card-secondary .son-elanlar-card-amount {
+.elan-card-third {
+  background-color: var(--primary-color-2);
+}
+
+.elan-card-secondary .elan-card-amount {
   color: var(--black);
 }
 
-.son-elanlar-card-primary h4 {
+.elan-card-primary h4 {
   color: var(--white);
 }
 
-.son-elanlar-card-secondary h4 {
+.elan-card-secondary h4 {
   color: var(--primary-color);
 }
 
-.son-elanlar-card .bookmark {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-}
-
-.son-elanlar-card .bookmark.bookmark-icon-fill {
-  background-color: var(--primary-color-2);
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-}
-
-.son-elanlar-card .bookmark .crown-icon {
-  display: none;
-}
-
-.son-elanlar-card .bookmark-icon-fill .crown-icon {
-  display: block;
-}
-
-.son-elanlar-card .bookmark.bookmark-icon-fill .bookmark-icon {
-  display: none;
-}
-
-.son-elanlar-card .company {
+.elan-card .company {
   border: none;
   margin: 0 !important;
   padding: 0 !important;
 }
 
-.son-elanlar-card-amount {
+.elan-card-amount {
   font-size: 22px;
   color: var(--primary-color-2);
 }
 
-.category-cards .category-card {
+.category-card {
   padding: 14px 20px;
   font-size: 12px;
   border-radius: 32px;
+  cursor: default;
 }
 
 .category-card-primary {
@@ -477,4 +465,307 @@ footer {
 .category-card-secondary {
   background-color: var(--primary-color-2);
   color: var(--black);
+}
+
+/* elan detallari page */
+
+#elan-detallari-page h2 {
+  font-size: 36px;
+  margin: 32px 0 28px;
+}
+
+#elan-detallari-page h3 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+#elan-detallari-page .dashed-button {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 28px;
+}
+
+#elan-detallari-page .rounded-icon {
+  width: 33px;
+  height: 33px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#elan-detallari-page .rounded-icon.rounded-icon-primary {
+  background-color: var(--primary-color);
+}
+
+#elan-detallari-page .rounded-icon.rounded-icon-secondary {
+  background-color: var(--primary-color-2);
+}
+
+.elan-detallari-cards {
+  gap: 14px;
+}
+
+.elan-detallari-cards .elan-card-primary {
+  padding: 32px 72px 36px 40px;
+}
+
+.elan-detallari-cards .bookmark.bookmark-icon-fill .bookmark-icon {
+  display: block;
+}
+
+.bookmark-elan-detallari {
+  background-color: var(--primary-color-2) !important;
+  display: block !important;
+}
+
+.bookmark-elan-detallari .bookmark-icon {
+  display: block !important;
+}
+
+/*  elana-muraciet page */
+#muraciet-detallari-page h3 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+#muraciet-detallari-page .dashed-button {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 28px;
+}
+
+#elana-muraciet-page form {
+  border-radius: 12px;
+  background-color: var(--primary-color);
+}
+
+#elana-muraciet-page h3 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  color: var(--primary-color-2);
+}
+
+#elana-muraciet-page form textarea {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 246px;
+}
+
+#elana-muraciet-page form .input {
+  height: 88px;
+  background-color: var(--white);
+  border-radius: 12px;
+  margin-top: 14px;
+}
+
+/* freelancer card*/
+
+.freelancer-card {
+  width: 318px;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  border-bottom: 1px solid var(--Primary-Color-1, #202361);
+}
+
+.freelancer-card .freelancer-profile {
+  background-color: var(--black);
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+}
+
+/* elan yerlesdir */
+
+#elan-yerlesdir-page h3 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  color: var(--primary-color-2);
+}
+
+#elan-yerlesdir-page form {
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#elan-yerlesdir-page form textarea {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 246px;
+}
+
+#elan-yerlesdir-page form .input {
+  padding: 14px 32px;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 999px;
+}
+
+#elan-yerlesdir-page form .input.select-input {
+  width: 30%;
+}
+
+/* freelancers page */
+
+.category-card-third {
+  background-color: var(--secondary-color);
+  color: var(--black);
+  padding: 12px 28px;
+}
+
+.category-card-third.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.freelancer-page-category-filter .add-icon {
+  display: none;
+  width: 17px;
+  height: 17px;
+}
+
+.freelancer-page-category-filter.active .add-icon {
+  display: block;
+}
+
+#freelancers-page .elan-yerlesdir-card {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#freelancers-page .elan-yerlesdir-card h3 {
+  color: var(--white);
+}
+
+#freelancers-page .elan-yerlesdir-card button {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.leaderboard-card {
+  width: 100vh;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color, #202361);
+  border-radius: 12px;
+}
+
+.leaderboard-card .profile {
+  width: 36px;
+  height: 36px;
+  background-color: var(--black);
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+.leaderboard-number {
+  max-width: 25px;
+  width: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* profile details page */
+
+.profile {
+  width: 204px;
+  height: 204px;
+  padding: 51px;
+  background-color: var(--black);
+  height: 200px;
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+#profile-details-page h2 {
+  font-size: 32px;
+}
+
+.summary-card-primary {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  height: 246px;
+}
+
+.summary-card-secondary {
+  color: var(--black);
+  background-color: var(--primary-color-2);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.summary-card-primary h4 {
+  color: var(--primary-color-2);
+}
+
+/* musterinin profile page'i */
+
+#musteri-profile-details-page h2 {
+  font-size: 32px;
+}
+
+.profil-statistikası {
+  height: auto;
+  padding: 32px 72px 36px 40px;
+}
+
+.muracietler-card {
+  width: 432px;
+  border-radius: 12px;
+}
+
+.muracietler-card .profile {
+  width: 36px;
+  height: 36px;
+  background-color: var(--black);
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+/* muraciet detallari page */
+
+#muraciet-detallari-page h3 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+#muraciet-detallari-page .dashed-button {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 28px;
+}
+
+#muraciet-detallari-page form {
+  border-radius: 12px;
+  background-color: var(--primary-color);
+}
+
+#muraciet-detallari-page h3 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  color: var(--primary-color-2);
+}
+
+#muraciet-detallari-page form textarea {
+  background-color: var(--white);
+  border-radius: 12px;
+  height: 246px;
+}
+
+#muraciet-detallari-page form .input {
+  height: 88px;
+  background-color: var(--white);
+  border-radius: 12px;
+  margin-top: 14px;
+}
+
+/* chats page */
+
+#chats-page {
+  min-height: 92vh;
+  min-width: 100vh;
+  overflow: hidden;
 }

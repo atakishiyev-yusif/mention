@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./freelancers.html">Frilanserlər</a>
+            <a href="./haqqimizda.html">Haqqımızda</a>
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="header-search flex items-center px-6 px-3">
+            <input type="text" placeholder="Axtarış" class="input" />
+            <div>
+              <a href="./search-page.html">
+                <img src="./assets/icons/search-normal.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="profile-details-page">
+      <div class="container">
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+          <a href="/">Ana səhifə</a>
+          <span>/</span>
+          <a href="#">Frilanserlər</a>
+          <span>/</span>
+          <a href="#" class="active">Profil detalları</a>
+        </div>
+        <div class="flex items-center gap-9 mt-8">
+          <div class="profile flex items-center justify-center">
+            <img src="./assets/icons/profile-lg.svg" alt="" />
+          </div>
+          <div class="flex flex-col items-start gap-4">
+            <div class="flex items-center gap-4">
+              <span class="text-4xl font-bold">Fidan Zeynallı</span>
+              <span class="secondary-button text-sm font-semibold">94 pt</span>
+            </div>
+            <span class="text-sm">@fidanzeynalli</span>
+
+            <button type="button" class="dashed-button dashed-button-primary">
+              Mesaj yaz
+            </button>
+          </div>
+        </div>
+
+        <!-- summary -->
+        <div class="mt-7">
+          <h2>Summary</h2>
+          <div class="category-cards my-5 font-medium flex items-center gap-3">
+            <span
+              class="category-card category-card-third flex items-center gap-1 justify-center"
+              >Məqalə/Bloq
+            </span>
+            <span
+              class="category-card category-card-third flex items-center gap-1 justify-center"
+              >Vebsayt kontenti
+            </span>
+            <span
+              class="category-card category-card-third flex items-center gap-1 justify-center"
+              >Sosial Media Kopiraytı
+            </span>
+          </div>
+          <p>
+            As a student of language and communication I gained insight in the
+            use of language in a broad variety of communicative situations. I
+            acquired the analytical, critical and creative skills that are
+            needed to understand, assess and produce communication, both in oral
+            and written form. I learned how to use language as a tool to
+            effectively reach different goals. As a student of Dutch language
+            and culture I learned how to thoroughly read and write in my native
+            language Dutch, but also in English.
+          </p>
+
+          <div class="summary-cards flex-wrap mt-7 flex gap-6 items-center">
+            <div class="summary-card-primary flex-1 p-8">
+              <h4 class="mb-4">İş təcrübəsi</h4>
+
+              <div class="flex flex-col gap-4">
+                <div class="font-medium flex flex-col gap-2">
+                  <span class="font-italic text-sm"
+                    >Oktyabr 2021 - Noyabr 2022</span
+                  >
+                  <span
+                    >Kontent menecer -
+                    <span class="font-semibold">Lorem Ipsum Agency</span></span
+                  >
+                </div>
+                <div class="font-medium flex flex-col gap-2">
+                  <span class="font-italic text-sm"
+                    >Oktyabr 2021 - Noyabr 2022</span
+                  >
+                  <span
+                    >Kontent menecer -
+                    <span class="font-semibold">Lorem Ipsum Agency</span></span
+                  >
+                </div>
+                <div class="mt-5 text-xs font-normal">
+                  <a href="#">Daha çox göstər</a>
+                </div>
+              </div>
+            </div>
+            <div class="summary-card-primary flex-2 p-8">
+              <h4 class="mb-4">Təhsil</h4>
+
+              <div class="flex flex-col gap-4">
+                <div class="font-medium flex flex-col gap-2">
+                  <span class="font-italic text-sm">2018-2021</span>
+                  <span
+                    >Language and communication - University of Amsterdam</span
+                  >
+                </div>
+                <div class="font-medium flex flex-col gap-2">
+                  <span class="font-italic text-sm">2018-2021</span>
+                  <span
+                    >Language and communication - University of Amsterdam</span
+                  >
+                </div>
+
+                <div class="mt-5 text-xs font-normal">
+                  <a href="#">Daha çox göstər</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="summary-card-primary flex-1 p-8">
+              <h4 class="mb-4">Sertifikatlar</h4>
+
+              <div class="flex flex-col gap-4">
+                <div class="font-medium flex flex-col gap-2">
+                  <span class="text-sm font-semibold">Coursera</span>
+                  <span class="">Language and communication </span>
+                </div>
+                <div class="font-medium flex flex-col gap-2">
+                  <span class="text-sm font-semibold">Coursera</span>
+                  <span class="">Language and communication </span>
+                </div>
+
+                <div class="mt-5 text-xs font-normal">
+                  <a href="#">Daha çox göstər</a>
+                </div>
+              </div>
+            </div>
+            <div class="summary-card-secondary py-8 px-12">
+              <h4>Dil Biliyi</h4>
+              <div class="flex items-center gap-10 mt-3">
+                <span class="font-medium">Rus dili - Advanced (C1)</span>
+                <span class="font-medium">İngilis dili - Advanced (C1)</span>
+                <span class="font-medium">Türk dili - Advanced (C1)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tesdiqlenmis frilans isler -->
+        <div class="mt-15">
+          <h2 class="mb-5">Təsdiqlənmiş frilans işlər</h2>
+          <div class="flex flex-wrap gap-6">
+            <div
+              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+            >
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="p-3 flex items-center justify-center">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                </div>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+            </div>
+            <div
+              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+            >
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="p-3 flex items-center justify-center">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                </div>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+            </div>
+            <div
+              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+            >
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="p-3 flex items-center justify-center">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                </div>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+            </div>
+            <div
+              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+            >
+              <div class="flex items-center justify-between">
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+                <div class="p-3 flex items-center justify-center">
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                </div>
+              </div>
+              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+              <p class="mb-8">
+                Looking for an experienced online editor to help oversee the
+                content and team for a blog talking about digital marketing and
+                advertisin…
+              </p>
+            </div>
+            <button
+              type="button"
+              class="dashed-button dashed-button-primary flex items-center justify-center mx-auto mt-10"
+            >
+              Daha çox göstər
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container flex items-center justify-between">
+        <span>© 2023 Mention.</span>
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

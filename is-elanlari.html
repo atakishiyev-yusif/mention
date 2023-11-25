@@ -26,14 +26,15 @@
         <div class="flex items-center gap-5">
           <nav class="flex items-center gap-8">
             <a href="./is-elanlari.html">İş elanları</a>
-            <a href="./frilanserler.html">Frilanserlər</a>
+            <a href="./freelancers.html">Frilanserlər</a>
             <a href="./haqqimizda.html">Haqqımızda</a>
             <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
           </nav>
-          <div class="header-search flex items-center px-6 px-3">
-            <input type="text" placeholder="Axtarış" class="input" />
+          <div class="flex items-center px-6 px-3">
             <div>
-              <img src="./assets/icons/search-normal.svg" alt="" />
+              <a href="./search-page.html">
+                <img src="./assets/icons/search-normal.svg" alt="" />
+              </a>
             </div>
           </div>
           <div class="profile">
@@ -44,13 +45,21 @@
     </header>
     <main id="is-elanlari-page">
       <div class="container">
+        <!-- breadcrumb -->
         <div class="breadcrumb">
-          <a href="#">Ana səhifə</a>
+          <a href="/">Ana səhifə</a>
           <span>/</span>
           <a href="#" class="active">İş Elanları</a>
         </div>
+
+        <!-- searchbar -->
         <div class="search-bar flex items-center justify-between">
-          <input type="text" class="input" placeholder="Açar söz daxil et" />
+          <input
+            type="text"
+            id="searchInput"
+            class="input"
+            placeholder="Açar söz daxil et"
+          />
           <img
             src="./assets/icons/search-normal.svg"
             alt="search-normal-icon"
@@ -69,7 +78,9 @@
             </p>
           </div>
           <button type="button" class="font-semibold">
-            Elan yerləşdir
+            <a href="./elan-yerlesdir.html">
+              Elan yerləşdir
+            </a>
           </button>
         </div>
 
@@ -153,9 +164,9 @@
 
           <!-- son elanlar  -->
           <div
-            class="son-elanlar-cards flex items-center justify-center flex-wrap gap-6"
+            class="elan-cards flex items-center justify-center flex-wrap gap-6"
           >
-            <div class="son-elanlar-card son-elanlar-card-primary py-9 px-12">
+            <div class="elan-card elan-card-primary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -178,7 +189,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -198,13 +209,15 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>
 
-            <div class="son-elanlar-card son-elanlar-card-primary py-9 px-12">
+            <div class="elan-card elan-card-primary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -227,7 +240,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -247,13 +260,15 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>
 
-            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+            <div class="elan-card elan-card-secondary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -274,7 +289,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -294,13 +309,15 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>
 
-            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+            <div class="elan-card elan-card-secondary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -321,7 +338,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -341,13 +358,15 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>
 
-            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+            <div class="elan-card elan-card-secondary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -368,7 +387,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -388,13 +407,15 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>
 
-            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+            <div class="elan-card elan-card-secondary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -415,7 +436,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -435,13 +456,15 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>
 
-            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+            <div class="elan-card elan-card-secondary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -462,7 +485,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -482,13 +505,15 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>
 
-            <div class="son-elanlar-card son-elanlar-card-secondary py-9 px-12">
+            <div class="elan-card elan-card-secondary py-9 px-12">
               <div class="flex items-center justify-between">
                 <div class="company flex items-center gap-2 pt-5">
                   <div class="company-profile">
@@ -509,7 +534,7 @@
                   />
                 </div>
               </div>
-              <div class="son-elanlar-card-amount mt-9 mb-5">
+              <div class="elan-card-amount mt-9 mb-5">
                 <span class="font-medium">50₼</span>
               </div>
               <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
@@ -529,8 +554,10 @@
                     >Deadline: 05.08.2023</span
                   >
                 </div>
-                <span class="category-card category-card-secondary"
-                  >Ətraflı ></span
+                <a
+                  href="./elan-detallari.html"
+                  class="category-card category-card-secondary"
+                  >Ətraflı ></a
                 >
               </div>
             </div>

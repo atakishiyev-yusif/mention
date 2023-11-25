@@ -9,6 +9,7 @@
   --primary-color: #202361;
   --primary-color-2: #a8e061;
   --secondary-color: #e5e5f8;
+  --error-color: #ba0000;
 
   --text-xs: 12px;
   --text-sm: 14px;
@@ -16,6 +17,8 @@
   --text-lg: 18px;
   --text-xl: 20px;
   --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-4xl: 40px;
 
   --font-normal: 400;
   --font-medium: 500;
@@ -30,6 +33,7 @@
   font-family: "Gilroy", "Montserrat", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
+  line-height: normal;
 }
 
 html {
@@ -81,6 +85,46 @@ a {
 
 /** Pre ready classes */
 
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-color {
+  background-color: var(--primary-color-2);
+}
+
+.bg-secondary-color-2 {
+  background-color: var(--secondary-color);
+}
+
+.bg-error-color {
+  background-color: var(--error-color);
+}
+
+.bg-black-color {
+  background-color: black;
+}
+
+.bg-white-color {
+  background-color: var(--white);
+}
+
+.text-primary-color {
+  color: var(--primary-color);
+}
+
+.text-error-color {
+  color: var(--error-color);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
+}
+
 .text-xs {
   font-size: var(--text-xs);
 }
@@ -105,6 +149,14 @@ a {
   font-size: var(--text-2xl);
 }
 
+.text-3xl {
+  font-size: var(--text-3xl);
+}
+
+.text-4xl {
+  font-size: var(--text-4xl);
+}
+
 .font-bold {
   font-weight: var(--font-bold);
 }
@@ -121,12 +173,24 @@ a {
   font-weight: var(--font-semibold);
 }
 
+.font-italic {
+  font-style: italic;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .flex {
@@ -165,8 +229,28 @@ a {
   gap: 24px;
 }
 
+.gap-7 {
+  gap: 28px;
+}
+
 .gap-8 {
   gap: 32px;
+}
+
+.gap-9 {
+  gap: 36px;
+}
+
+.gap-10 {
+  gap: 40px;
+}
+
+.gap-12 {
+  gap: 48px;
+}
+
+.gap-15 {
+  gap: 60px;
 }
 
 .justify-center {
@@ -285,6 +369,14 @@ a {
   margin-top: 36px;
 }
 
+.mt-10 {
+  margin-top: 40px;
+}
+
+.mt-12 {
+  margin-top: 48px;
+}
+
 .mt-13 {
   margin-top: 52px;
 }
@@ -321,6 +413,19 @@ a {
   margin-bottom: 32px;
 }
 
+.mb-9 {
+  margin-bottom: 36px;
+}
+
+.mb-15 {
+  margin-bottom: 60px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mx-1 {
   margin-left: 4px;
   margin-right: 4px;
@@ -336,6 +441,16 @@ a {
   margin-right: 24px;
 }
 
+.mx-7 {
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.mx-10 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .my-1 {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -346,9 +461,24 @@ a {
   margin-bottom: 8px;
 }
 
+.my-5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .my-6 {
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+.my-7 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.my-8 {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .p-3 {
@@ -375,6 +505,10 @@ a {
   padding: 40px;
 }
 
+.p-12 {
+  padding: 48px;
+}
+
 .px-1 {
   padding-left: 4px;
   padding-right: 4px;
@@ -395,9 +529,24 @@ a {
   padding-right: 24px;
 }
 
+.px-7 {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.px-5 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .px-8 {
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.px-10 {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .px-12 {
@@ -420,9 +569,29 @@ a {
   padding-bottom: 12px;
 }
 
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-5 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .py-6 {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.py-7 {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.py-8 {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .py-9 {
@@ -486,7 +655,6 @@ h5 {
 }
 
 .icons-bg {
-  background: red;
   width: 40px;
   height: 40px;
 }
@@ -497,6 +665,16 @@ h5 {
   font-weight: 700;
   border: 1px dashed;
   font-size: 16px;
+}
+
+.dashed-button-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.dashed-button-secondary {
+  color: var(--primary-color-2);
+  border-color: var(--primary-color-2);
 }
 
 .btn-continue-with-google {
@@ -524,3 +702,54 @@ h5 {
   color: var(--black);
   font-weight: 500;
 }
+
+.bookmark {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.bookmark.bookmark-icon-fill {
+  background-color: var(--primary-color-2);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.bookmark .crown-icon {
+  display: none;
+}
+
+.bookmark-icon-fill .crown-icon {
+  display: block;
+}
+
+.bookmark.bookmark-icon-fill .bookmark-icon {
+  display: none;
+}
+
+.secondary-button {
+  padding: 12px 20px;
+  font-size: 12px;
+  border-radius: 32px;
+  background-color: var(--primary-color-2);
+}
+
+.profile-sm {
+  width: 36px;
+  height: 36px;
+  padding: 9px;
+  border-radius: 9999px;
+}
+
+.send-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  padding: 7px;
+  background-color: var(--primary-color);
+}
+
+/* .message-bubble {
+
+} */

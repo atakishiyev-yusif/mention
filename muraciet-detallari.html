@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./freelancers.html">Frilanserlər</a>
+            <a href="./haqqimizda.html">Haqqımızda</a>
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="flex items-center px-6 px-3">
+            <div>
+              <a href="./search-page.html">
+                <img src="./assets/icons/search-normal.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="muraciet-detallari-page">
+      <div class="container">
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+          <a href="/">Ana səhifə</a>
+          <span>/</span>
+          <a href="./musteri-profile-details.html">Profil</a>
+          <span>/</span>
+          <a href="./musteri-profile-details.html">Aktiv elanlar</a>
+          <span>/</span>
+          <a href="#" class="active">Müraciət detalları</a>
+        </div>
+
+        <form class="p-12 mt-8 mb-15" action="./is-elanlari.html">
+          <h3>Senior Editor for Advertising Blog</h3>
+          <textarea
+            class="textarea px-10 py-12"
+            rows="4"
+            cols="50"
+            placeholder="Müştərini iş tərzinizlə tanış etmək üçün qısa bir preview göndərin"
+            required
+          >
+          </textarea>
+          <input
+            type="text"
+            class="px-10 py-12 input"
+            placeholder="Müştəriyə notunuz varsa bura qeyd edə bilərsiniz (Optional)"
+          />
+
+          <button
+            style="
+              border-color: var(--primary-color-2);
+              color: var(--primary-color-2);
+              margin-right: auto;
+              margin-left: auto;
+              margin-top: 28px;
+            "
+            type="submit"
+            class="dashed-button flex items-center justify-center"
+          >
+            Müraciət et
+          </button>
+        </form>
+        <div class="flex items-start gap-5">
+          <!-- elan detallari -->
+          <div class="flex items-center elan-detallari-cards">
+            <div class="elan-card elan-card-sm elan-card-third">
+              <div class="company flex items-center gap-2 pt-5">
+                <div class="company-profile">
+                  <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                </div>
+                <div class="text-sm font-semibold">Şirkətin adı</div>
+              </div>
+              <div class="flex flex-col gap-3 mt-4">
+                <span>Əmək haqqı: <span class="font-semibold">50₼</span></span>
+                <span
+                  >Kateqoriya: <span class="font-semibold">Məqalə/Bloq</span>
+                </span>
+              </div>
+            </div>
+            <div class="elan-card elan-card-primary">
+              <div class="company flex items-center gap-2 pt-5">
+                <div class="company-profile">
+                  <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                </div>
+                <div class="text-sm font-semibold">Şirkətin adı</div>
+              </div>
+              <div class="flex flex-col gap-3 mt-4">
+                <span>Əmək haqqı: <span class="font-semibold">50₼</span></span>
+                <span
+                  >Kateqoriya: <span class="font-semibold">Məqalə/Bloq</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bookmark bookmark-elan-detallari p-3 flex items-center justify-center"
+          >
+            <img
+              src="./assets/icons/bookmark.svg"
+              alt="bookmark-icon"
+              class="bookmark-icon bookmark-icon-fill"
+            />
+          </div>
+        </div>
+        <div class="elan-detallari-content mt-8">
+          <p class="mb-9">
+            Looking for an experienced online editor to help oversee the content
+            and team for a blog talking about digital marketing and advertising.
+          </p>
+          <div class="flex flex-col gap-4 mb-9">
+            <p>- Should have a college degree in English</p>
+            <p>- Experience managing a team of 5 or more writers.</p>
+            <p>- Experience with Slack, Gmail, Google Docs, Wordpress.</p>
+            <p>- Experience with SEO tools (Ahrefs, SEM Rush, etc)</p>
+            <p>
+              - Experience with AI writing tools (ChatGBT, Google Bard, etc)
+            </p>
+            <p>
+              - Experience overseeing design team to create custom thumbnails
+              that follow brand guidelines.
+            </p>
+            <p>
+              - Must be able to attend several weekly zoom calls with team
+              members.
+            </p>
+          </div>
+          <p class="mb-9">
+            Project will be part time to begin, has potential for more hours as
+            we progress. Workload will be 50% reviewing content, 25% managerial
+            and overseeing the teams and 25% writing long form articles on
+            highly targeted subjects.
+          </p>
+          <p>
+            To apply, please let me know why your the right candidate for this
+            position in 50 words or less. Thanks!
+          </p>
+        </div>
+
+        <!-- nece muraciet edim ? -->
+
+        <h3 style="color: var(--primary-color);" class="mt-15 mb-5">
+          Digər müraciətlər
+        </h3>
+
+        <div
+          class="muracietler-cards flex items-center justify-center gap-6 flex-wrap"
+        >
+          <div class="p-8 muracietler-card bg-secondary-color-2">
+            <div class="flex items-center gap-3">
+              <div class="profile">
+                <img src="./assets/icons/profile.svg" alt="profile-icon" />
+              </div>
+              <span>Fidan Zeynallı</span>
+            </div>
+            <p class="my-7 font-normal">
+              Elevating brands through innovative strategies and cutting-edge
+              solutions. Our team is dedicated to propelling your business
+              towards success and unlocking its full potential. Let's
+              collaborate and turn your vision into ...
+            </p>
+            <div class="flex items-center justify-between">
+              <button type="button" class="dashed-button dashed-button-primary">
+                Ardını oxu
+              </button>
+              <button
+                type="button"
+                class="text-error-color text-sm flex items-center justify-between gap-3"
+              >
+                Müraciəti sil
+                <div>
+                  <img
+                    src="./assets/icons/warning-icon.svg"
+                    alt="warning-icon"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-8 muracietler-card bg-secondary-color-2">
+            <div class="flex items-center gap-3">
+              <div class="profile">
+                <img src="./assets/icons/profile.svg" alt="profile-icon" />
+              </div>
+              <span>Fidan Zeynallı</span>
+            </div>
+            <p class="my-7 font-normal">
+              Elevating brands through innovative strategies and cutting-edge
+              solutions. Our team is dedicated to propelling your business
+              towards success and unlocking its full potential. Let's
+              collaborate and turn your vision into ...
+            </p>
+            <div class="flex items-center justify-between">
+              <button type="button" class="dashed-button dashed-button-primary">
+                Ardını oxu
+              </button>
+              <button
+                type="button"
+                class="text-error-color text-sm flex items-center justify-between gap-3"
+              >
+                Müraciəti sil
+                <div>
+                  <img
+                    src="./assets/icons/warning-icon.svg"
+                    alt="warning-icon"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-8 muracietler-card bg-secondary-color-2">
+            <div class="flex items-center gap-3">
+              <div class="profile">
+                <img src="./assets/icons/profile.svg" alt="profile-icon" />
+              </div>
+              <span>Fidan Zeynallı</span>
+            </div>
+            <p class="my-7 font-normal">
+              Elevating brands through innovative strategies and cutting-edge
+              solutions. Our team is dedicated to propelling your business
+              towards success and unlocking its full potential. Let's
+              collaborate and turn your vision into ...
+            </p>
+            <div class="flex items-center justify-between">
+              <button type="button" class="dashed-button dashed-button-primary">
+                Ardını oxu
+              </button>
+              <button
+                type="button"
+                class="text-error-color text-sm flex items-center justify-between gap-3"
+              >
+                Müraciəti sil
+                <div>
+                  <img
+                    src="./assets/icons/warning-icon.svg"
+                    alt="warning-icon"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container flex items-center justify-between">
+        <span>© 2023 Mention.</span>
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

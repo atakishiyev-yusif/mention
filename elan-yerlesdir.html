@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./freelancers.html">Frilanserlər</a>
+            <a href="./haqqimizda.html">Haqqımızda</a>
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="flex items-center px-6 px-3">
+            <div>
+              <a href="./search-page.html">
+                <img src="./assets/icons/search-normal.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="elan-yerlesdir-page">
+      <div class="container">
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+          <a href="/">Ana səhifə</a>
+          <span>/</span>
+          <a href="./is-elanlari.html">İş Elanları</a>
+          <span>/</span>
+          <a href="#" class="active">Elan yerləşdir</a>
+        </div>
+
+        <form class="p-12 mt-8 mb-15" action="./is-elanlari.html">
+          <h3>Yeni elan yerləşdir</h3>
+          <label class="flex flex-col gap-4">
+            Kateqoriya
+            <select class="input select-input">
+              <option value="">Sosial Media Kopiraytı</option>
+              <option value="">Tərcümə</option>
+              <option value="">Məqalə/Bloq</option>
+              <option value="">Sosial Media Kopiraytı</option>
+            </select>
+          </label>
+
+          <div class="flex items-center gap-15">
+            <label class="flex flex-2 flex-col gap-4 mt-6">
+              Başlıq
+              <input
+                type="text"
+                placeholder="Elanın başlığını yaz"
+                class="input"
+              />
+            </label>
+            <label class="flex flex-col gap-4 mt-6">
+              Elanın bitmə tarixi
+              <input type="text" placeholder="Gün / Ay / İl" class="input" />
+            </label>
+            <label class="flex flex-col gap-4 mt-6">
+              Əmək haqqı
+              <input type="text" placeholder="500₼" class="input" />
+            </label>
+          </div>
+
+          <label class="flex flex-col gap-4 mt-6">
+            Əmək haqqı
+            <textarea
+              class="textarea px-10 py-12"
+              rows="4"
+              cols="50"
+              placeholder="Elan haqda ətraflı məlumat yaz"
+              required
+            >
+            </textarea>
+          </label>
+
+          <button
+            style="
+              border-color: var(--primary-color-2);
+              color: var(--primary-color-2);
+              margin-top: 28px;
+            "
+            type="submit"
+            class="dashed-button flex items-center justify-center"
+          >
+            Elanı göndər
+          </button>
+        </form>
+
+        <div id="customer-reviews">
+          <div class="container">
+            <h2>Müştəri rəyləri</h2>
+            <p class="my-6">
+              Create engaging, click-worthy social media posts to engage your
+            </p>
+            <div class="flex items-center gap-6 customer-reviews">
+              <div class="customer-review">
+                <div>
+                  <img
+                    src="./assets/icons/favorite-icon.svg"
+                    alt="favorite-icon"
+                  />
+                </div>
+                <p class="py-6">
+                  I'm thoroughly impressed with the writing services provided.
+                  The content was top-notch, delivered on time, and perfectly
+                  matched our needs. Will definitely work with this freelancer
+                  again!
+                </p>
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+              </div>
+              <div class="customer-review">
+                <div>
+                  <img
+                    src="./assets/icons/favorite-icon.svg"
+                    alt="favorite-icon"
+                  />
+                </div>
+                <p class="py-6">
+                  I'm thoroughly impressed with the writing services provided.
+                  The content was top-notch, delivered on time, and perfectly
+                  matched our needs. Will definitely work with this freelancer
+                  again!
+                </p>
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+              </div>
+              <div class="customer-review">
+                <div>
+                  <img
+                    src="./assets/icons/favorite-icon.svg"
+                    alt="favorite-icon"
+                  />
+                </div>
+                <p class="py-6">
+                  I'm thoroughly impressed with the writing services provided.
+                  The content was top-notch, delivered on time, and perfectly
+                  matched our needs. Will definitely work with this freelancer
+                  again!
+                </p>
+                <div class="company flex items-center gap-2 pt-5">
+                  <div class="company-profile">
+                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  </div>
+
+                  <div class="text-sm font-semibold">Şirkətin adı</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container flex items-center justify-between">
+        <span>© 2023 Mention.</span>
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

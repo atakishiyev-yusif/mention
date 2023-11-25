@@ -1,10 +1,588 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
   </head>
   <body>
-    <input type="text" />
+    <!-- header -->
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./freelancers.html">Frilanserlər</a>
+            <a href="./haqqimizda.html">Haqqımızda</a>
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="flex items-center px-6 px-3">
+            <div>
+              <a href="./search-page.html">
+                <img src="./assets/icons/search-normal.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="freelancers-page">
+      <div class="container">
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+          <a href="/">Ana səhifə</a>
+          <span>/</span>
+          <a href="#" class="active">Frilanserlər</a>
+        </div>
+
+        <h2 class="mt-8">Frilanserlər</h2>
+
+        <div class="category-cards mt-6 font-medium flex items-center gap-3">
+          <span
+            class="category-card category-card-third freelancer-page-category-filter flex items-center gap-1 justify-center"
+            >Hamısı
+            <div class="add-icon">
+              <img src="./assets/icons/add-icon.svg" alt="add-icon" /></div
+          ></span>
+          <span
+            class="active category-card category-card-third freelancer-page-category-filter flex items-center gap-1 justify-center"
+            >Kopirayter
+            <div class="add-icon">
+              <img src="./assets/icons/add-icon.svg" alt="add-icon" /></div
+          ></span>
+          <span
+            class="active category-card category-card-third freelancer-page-category-filter flex items-center gap-1 justify-center"
+            >Kontent yazar
+            <div class="add-icon">
+              <img src="./assets/icons/add-icon.svg" alt="add-icon" /></div
+          ></span>
+          <span
+            class="category-card category-card-third freelancer-page-category-filter flex items-center gap-1 justify-center"
+            >Tərcüməçi
+            <div class="add-icon">
+              <img src="./assets/icons/add-icon.svg" alt="add-icon" /></div
+          ></span>
+          <span
+            class="category-card category-card-third freelancer-page-category-filter flex items-center gap-1 justify-center"
+            >UX Writer
+            <div class="add-icon">
+              <img src="./assets/icons/add-icon.svg" alt="add-icon" /></div
+          ></span>
+          <span
+            class="category-card category-card-third freelancer-page-category-filter flex items-center gap-1 justify-center"
+            >Məqalə/Bloq yazarı
+            <div class="add-icon">
+              <img src="./assets/icons/add-icon.svg" alt="add-icon" />
+            </div>
+          </span>
+          <span class="category-card category-card-third"
+            >Seçimləri təmizlə</span
+          >
+        </div>
+
+        <div class="freelancers mt-7">
+          <div class="flex items-center justify-center gap-6">
+            <div
+              class="mt-5 freelancer-card px-2 py-9 flex flex-col items-center justify-center"
+            >
+              <div
+                class="freelancer-profile flex items-center justify-center p-5"
+              >
+                <img src="./assets/icons/profile.svg" alt="profile" />
+              </div>
+              <div class="mt-5 flex flex-col items-center">
+                <div>
+                  <span class="text-xl">Fidan Zeynallı</span>
+                </div>
+                <div class="mt-1">
+                  <span
+                    class="text-base font-bold"
+                    style="color: var(--primary-color);"
+                    >94 points</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="category-cards font-medium flex items-center justify-center mb-6"
+              >
+                <div
+                  class="flex items-center justify-center flex-wrap gap-3 mt-5"
+                >
+                  <span class="category-card category-card-primary"
+                    >Tərcümə</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Sosial Media Kopiraytı</span
+                  >
+                </div>
+              </div>
+              <button type="button" class="secondary-button">
+                <a href="./profile-details.html">Ətraflı ></a>
+              </button>
+            </div>
+            <div
+              class="mt-5 freelancer-card px-2 py-9 flex flex-col items-center justify-center"
+            >
+              <div
+                class="freelancer-profile flex items-center justify-center p-5"
+              >
+                <img src="./assets/icons/profile.svg" alt="profile" />
+              </div>
+              <div class="mt-5 flex flex-col items-center">
+                <div>
+                  <span class="text-xl">Fidan Zeynallı</span>
+                </div>
+                <div class="mt-1">
+                  <span
+                    class="text-base font-bold"
+                    style="color: var(--primary-color);"
+                    >94 points</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="category-cards font-medium flex items-center justify-center mb-6"
+              >
+                <div
+                  class="flex items-center justify-center flex-wrap gap-3 mt-5"
+                >
+                  <span class="category-card category-card-primary"
+                    >Tərcümə</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Sosial Media Kopiraytı</span
+                  >
+                </div>
+              </div>
+              <button type="button" class="secondary-button">
+                <a href="./profile-details.html">Ətraflı ></a>
+              </button>
+            </div>
+            <div
+              class="mt-5 freelancer-card px-2 py-9 flex flex-col items-center justify-center"
+            >
+              <div
+                class="freelancer-profile flex items-center justify-center p-5"
+              >
+                <img src="./assets/icons/profile.svg" alt="profile" />
+              </div>
+              <div class="mt-5 flex flex-col items-center">
+                <div>
+                  <span class="text-xl">Fidan Zeynallı</span>
+                </div>
+                <div class="mt-1">
+                  <span
+                    class="text-base font-bold"
+                    style="color: var(--primary-color);"
+                    >94 points</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="category-cards font-medium flex items-center justify-center mb-6"
+              >
+                <div
+                  class="flex items-center justify-center flex-wrap gap-3 mt-5"
+                >
+                  <span class="category-card category-card-primary"
+                    >Tərcümə</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Sosial Media Kopiraytı</span
+                  >
+                </div>
+              </div>
+              <button type="button" class="secondary-button">
+                <a href="./profile-details.html">Ətraflı ></a>
+              </button>
+            </div>
+            <div
+              class="mt-5 freelancer-card px-2 py-9 flex flex-col items-center justify-center"
+            >
+              <div
+                class="freelancer-profile flex items-center justify-center p-5"
+              >
+                <img src="./assets/icons/profile.svg" alt="profile" />
+              </div>
+              <div class="mt-5 flex flex-col items-center">
+                <div>
+                  <span class="text-xl">Fidan Zeynallı</span>
+                </div>
+                <div class="mt-1">
+                  <span
+                    class="text-base font-bold"
+                    style="color: var(--primary-color);"
+                    >94 points</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="category-cards font-medium flex items-center justify-center mb-6"
+              >
+                <div
+                  class="flex items-center justify-center flex-wrap gap-3 mt-5"
+                >
+                  <span class="category-card category-card-primary"
+                    >Tərcümə</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Məqalə/Bloq</span
+                  >
+                  <span class="category-card category-card-primary"
+                    >Sosial Media Kopiraytı</span
+                  >
+                </div>
+              </div>
+              <button type="button" class="secondary-button">
+                <a href="./profile-details.html">Ətraflı ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="dashed-button dashed-button-primary mx-auto flex items-center justify-center mt-10"
+        >
+          Daha çox göstər
+        </button>
+
+        <div
+          class="elan-yerlesdir-card px-12 py-9 mt-8 flex items-center justify-between mt-12"
+        >
+          <div>
+            <h3 class="mb-2">Sən də frilanser axtarırsan?</h3>
+            <p>
+              Upwork makes it affordable to up your work and take advantage of
+              low transaction rates.
+            </p>
+          </div>
+          <button type="button" class="font-semibold">
+            Elan yerləşdir
+          </button>
+        </div>
+
+        <!-- leaderboard -->
+        <div class="leaderboard mt-12">
+          <h2>Leaderboard</h2>
+          <div class="flex gap-5">
+            <div class="leaderboard-cards flex flex-col gap-2 mt-5">
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    1
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    2
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    3
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    4
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    5
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+            </div>
+            <div class="leaderboard-cards flex flex-col gap-2 mt-5">
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    6
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    7
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    8
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    9
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+
+              <div
+                class="leaderboard-card flex items-center justify-between py-5 px-12"
+              >
+                <div class="flex items-center gap-7">
+                  <div class="leaderboard-number text-2xl font-bold">
+                    10
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <div class="profile">
+                      <img src="./assets/icons/profile.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <span class="text-xl font-semibold">Fidan Zeynallı</span>
+                      <a
+                        href="./profile-details.html"
+                        class="text-sm font-medium text-primary-color"
+                        >Profilinə bax</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <span class="text-primary-color font-bold text-base"
+                  >94 points</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container flex items-center justify-between">
+        <span>© 2023 Mention.</span>
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

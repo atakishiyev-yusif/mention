@@ -1,27 +1,33 @@
 # Todos
 
 [x] font'lari al
-[x] reset.css & common.css
+[x] create reset.css & common.css
 [x] layout
-[] login/signup page
+[x] login/signup page
 
 ## Main Pages
 
 [x] landing page
 [x] is elanlari
-[] elan detallari
-[] muraciet
-[] axtaris
-[] elan yerlesdir
-[] frilanserler
+[x] elan detallari
+[x] muraciet
+[x] elen detallari
+[x] elan muraciet
+[x] axtaris
+[x] elan yerlesdir
+[x] frilanserler
 
 ## Profiles
 
-[] frilanserin profili
-[] musterinin profili
-[] elana gelen muracietler
-[] muraciet detallari
-[] frilanserin profili (oz gorduyu)
-[] musterinin profili
+[x] frilanserin profili
+[x] musterinin profili
+[x] elana gelen muracietler
+[x] muraciet detallari
+[x] frilanserin profili (oz gorduyu)
+[x] musterinin profili
 
-STEP BUTTON
+## Chats
+
+[x] landing page chat
+[x] chat page
+[x] chats page

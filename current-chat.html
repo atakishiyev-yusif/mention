@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Main Js -->
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center">
+      <div class="container flex items-center justify-between p-3">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="flex items-center gap-5">
+          <nav class="flex items-center gap-8">
+            <a href="./is-elanlari.html">İş elanları</a>
+            <a href="./freelancers.html">Frilanserlər</a>
+            <a href="./haqqimizda.html">Haqqımızda</a>
+            <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
+          </nav>
+          <div class="flex items-center px-6 px-3">
+            <div>
+              <a href="./search-page.html">
+                <img
+                  src="./assets/icons/search-normal.svg"
+                  alt="search-normal-icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./assets/icons/profile.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="chats-page" class="flex">
+      <!-- all chats -->
+      <div class="all-chats flex-2">
+        <div class="flex items-center justify-between py-4 px-6">
+          <input type="text" class="input" placeholder="Mesaj və ya ad axtar" />
+          <div class="flex items-center gap-3">
+            <div class="">
+              <img
+                src="./assets/icons/search-normal.svg"
+                alt="search-normal-icon"
+              />
+            </div>
+            <div class="">
+              <img
+                src="./assets/icons/message-edit.svg"
+                alt="message-edit-icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="all-chats-cards">
+          <div
+            class="all-chats-card py-5 px-6 bg-secondary-color-2 flex justify-between"
+          >
+            <div class="flex items-center gap-3">
+              <div class="profile-sm bg-black-color">
+                <img src="./assets/icons/profile.svg" alt="profile-icon" />
+              </div>
+              <div class="flex flex-col">
+                <span class="font-semibold">Fidan Zeynallı</span>
+                <span class="text-xs font-normal">Başqa sualınız var?</span>
+              </div>
+            </div>
+            <span class="text-xs">7 Avq</span>
+          </div>
+          <div class="all-chats-card py-5 px-6 flex justify-between">
+            <div class="flex items-center gap-3">
+              <div class="profile-sm bg-black-color">
+                <img src="./assets/icons/profile.svg" alt="profile-icon" />
+              </div>
+              <div class="flex flex-col">
+                <span class="font-semibold">Fidan Zeynallı</span>
+                <span class="text-xs font-normal">Siz: Xeyr, yoxdur.</span>
+              </div>
+            </div>
+            <span class="text-xs">7 Avq</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- current chat -->
+      <div
+        class="relative current-chat bg-primary-color flex-4 text-white font-medium flex flex-col gap-4"
+      >
+        <div
+          class="absolute py-4 px-6 bg-secondary-color-2 text-black flex items-center gap-3 font-medium"
+          style="top: 0; width: 100%;"
+        >
+          <div class="profile-sm bg-black-color">
+            <img src="./assets/icons/profile.svg" alt="profile-icon" />
+          </div>
+          <span class="font-medium">
+            Fidan Zeynallı
+          </span>
+        </div>
+
+        <div class="absolute" style="width: 100%; top: 5em;">
+          <div class="flex justify-center items-center">
+            <button
+              type="button"
+              class="bg-white-color text-xs"
+              style="padding: 10px; border-radius: 20px;"
+            >
+              Dünən
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-black">
+          <div
+            class="flex items-start justify-start flex-col gap-5"
+            style="width: 100%; height: 100%; margin-top: 22rem;"
+          >
+            <div
+              class="bg-secondary-color py-4 px-6 mx-10 text-sm"
+              style="left: 0; border-radius: 12px;"
+            >
+              Ready to connect? Type your message here.
+            </div>
+            <div
+              class="bg-secondary-color py-4 px-5 mx-10 text-sm"
+              style="left: 0; border-radius: 12px;"
+            >
+              Ready to connect? Type your message here.
+            </div>
+            <div
+              class="bg-secondary-color py-4 px-6 mx-10 text-sm"
+              style="left: 0; border-radius: 12px;"
+            >
+              Ready to connect? Type your message here.
+            </div>
+          </div>
+
+          <div
+            class="flex items-start justify-end flex-col gap-5"
+            style="width: 100%; height: 100%; margin-bottom: 28px;"
+          >
+            <div
+              class="bg-secondary-color-2 py-4 px-5 mx-10 text-sm"
+              style="left: 0; border-radius: 12px;"
+            >
+              Ready to connect? Type your message here.
+            </div>
+          </div>
+        </div>
+
+        <!-- messages -->
+        <!-- <div
+          style="width: 100%; height: 100%;"
+          class="flex items-center justify-center flex-col gap-4"
+        >
+          <div class="messags-icon">
+            <img src="./assets/icons/messages.svg" alt="" />
+          </div>
+
+          <div style="max-width: 28ch; text-align: center;">
+            Ready to connect? Type your message here.
+          </div>
+        </div> -->
+
+        <!-- send message input -->
+        <div
+          style="width: 100%; bottom: 0;"
+          class="absolute bg-secondary-color-2 text-black p-4 flex items-center justify-between gap-4"
+        >
+          <div
+            style="border-radius: 10px; width: 100%;"
+            class="bg-white-color px-4 py-2"
+          >
+            <input type="text" class="input" />
+          </div>
+          <div class="flex items-center gap-3">
+            <button type="button">
+              <img
+                src="./assets/icons/gallery-add.svg"
+                alt="gallery-add-icon"
+              />
+            </button>
+            <button type="button">
+              <img src="./assets/icons/microphone.svg" alt="micrphone-icon" />
+            </button>
+
+            <button type="button" class="send-button">
+              <img src="./assets/icons/send.svg" alt="send-icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <!-- <footer>
+      <div class="container flex items-center justify-between">
+        <span>© 2023 Mention.</span>
+        <div>
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer> -->
+  </body>
+</html>
