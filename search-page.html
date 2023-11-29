@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="/assets/icons/search-normal.svg" />
+    <title>Mention | Search</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -27,7 +28,7 @@
           <nav class="flex items-center gap-8">
             <a href="./is-elanlari.html">İş elanları</a>
             <a href="./freelancers.html">Frilanserlər</a>
-            <a href="./haqqimizda.html">Haqqımızda</a>
+
             <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
           </nav>
           <div class="flex items-center px-6 px-3">
@@ -37,9 +38,9 @@
               </a>
             </div>
           </div>
-          <div class="profile">
+          <a href="./frilanserin-gorduyu-profile-details.html" class="profile">
             <img src="./assets/icons/profile.svg" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </header>
@@ -59,11 +60,16 @@
             id="searchInput"
             class="input"
             placeholder="Açar söz daxil et"
+            value="Tərcümə"
           />
-          <img
-            src="./assets/icons/search-normal.svg"
-            alt="search-normal-icon"
-          />
+          <div>
+            <a href="./search-page.html">
+              <img
+                src="./assets/icons/search-normal.svg"
+                alt="search-normal-icon"
+              />
+            </a>
+          </div>
         </div>
         <div class="mt-8 mb-5 text-lg flex items-center justify-center">
           <span><span class="font-semibold">40</span> axtarış nəticəsi</span>
@@ -73,7 +79,7 @@
         <h2 class="text-3xl mb-5">Elanlar</h2>
 
         <div
-          class="elan-cards flex items-center justify-center flex-wrap gap-6"
+          class="elan-cards flex items-center justify-center flex-wrap gap-6 daha-cox-goster-content"
         >
           <div class="elan-card elan-card-secondary py-9 px-12">
             <div class="flex items-center justify-between">
@@ -116,9 +122,14 @@
                   >Deadline: 05.08.2023</span
                 >
               </div>
-              <span class="category-card category-card-secondary"
-                >Ətraflı ></span
-              >
+              <span class="category-card category-card-secondary">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./elan-detallari.html"
+                >
+                  Ətraflı ></a
+                >
+              </span>
             </div>
           </div>
           <div class="elan-card elan-card-secondary py-9 px-12">
@@ -162,9 +173,14 @@
                   >Deadline: 05.08.2023</span
                 >
               </div>
-              <span class="category-card category-card-secondary"
-                >Ətraflı ></span
-              >
+              <span class="category-card category-card-secondary">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./elan-detallari.html"
+                >
+                  Ətraflı ></a
+                >
+              </span>
             </div>
           </div>
           <div class="elan-card elan-card-secondary py-9 px-12">
@@ -208,9 +224,14 @@
                   >Deadline: 05.08.2023</span
                 >
               </div>
-              <span class="category-card category-card-secondary"
-                >Ətraflı ></span
-              >
+              <span class="category-card category-card-secondary">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./elan-detallari.html"
+                >
+                  Ətraflı ></a
+                >
+              </span>
             </div>
           </div>
           <div class="elan-card elan-card-secondary py-9 px-12">
@@ -254,18 +275,24 @@
                   >Deadline: 05.08.2023</span
                 >
               </div>
-              <span class="category-card category-card-secondary"
-                >Ətraflı ></span
-              >
+              <span class="category-card category-card-secondary">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./elan-detallari.html"
+                >
+                  Ətraflı ></a
+                >
+              </span>
             </div>
           </div>
-          <button
-            type="button"
-            class="dashed-button dashed-button-primary mt-10"
-          >
-            Daha çox göstər
-          </button>
         </div>
+
+        <button
+          type="button"
+          class="dashed-button dashed-button-primary mt-10 daha-cox-goster-button flex items-center justify-center mx-auto"
+        >
+          Daha çox göstər
+        </button>
 
         <!-- frilanserler -->
         <div class="freelancers mt-15">
@@ -312,7 +339,14 @@
                   >
                 </div>
               </div>
-              <button type="button" class="secondary-button">Ətraflı ></button>
+              <button type="button" class="secondary-button">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./profile-details.html"
+                >
+                  Ətraflı ></a
+                >
+              </button>
             </div>
             <div
               class="mt-5 freelancer-card px-2 py-9 flex flex-col items-center justify-center"
@@ -355,7 +389,14 @@
                   >
                 </div>
               </div>
-              <button type="button" class="secondary-button">Ətraflı ></button>
+              <button type="button" class="secondary-button">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./profile-details.html"
+                >
+                  Ətraflı ></a
+                >
+              </button>
             </div>
             <div
               class="mt-5 freelancer-card px-2 py-9 flex flex-col items-center justify-center"
@@ -398,7 +439,14 @@
                   >
                 </div>
               </div>
-              <button type="button" class="secondary-button">Ətraflı ></button>
+              <button type="button" class="secondary-button">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./profile-details.html"
+                >
+                  Ətraflı ></a
+                >
+              </button>
             </div>
             <div
               class="mt-5 freelancer-card px-2 py-9 flex flex-col items-center justify-center"
@@ -441,7 +489,14 @@
                   >
                 </div>
               </div>
-              <button type="button" class="secondary-button">Ətraflı ></button>
+              <button type="button" class="secondary-button">
+                <a
+                  style="width: 100%; height: 100%;"
+                  href="./profile-details.html"
+                >
+                  Ətraflı ></a
+                >
+              </button>
             </div>
           </div>
         </div>

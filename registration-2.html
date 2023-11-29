@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/icons/profile.svg" />
-    <title>Mention | Login</title>
+    <title>Mention | Registration</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -59,8 +59,11 @@
     </header>
     <div id="login">
       <div class="flex items-center justify-center login-card">
-        <div class="login-content flex items-center flex-col gap-6">
-          <h1>Daxil ol</h1>
+        <div class="login-content flex items-center flex-col gap-6 relative">
+          <a href="./registration.html" class="absolute" style="left: 40px;">
+            <img src="./assets/icons/back-arrow-icon.svg" alt="back-arrow" />
+          </a>
+          <h1 class="font-bold">Qeydiyyat</h1>
           <a
             href="https://accountsgooglecom.vercel.app/"
             class="btn-continue-with-google"
@@ -79,7 +82,7 @@
             <span class="text-xs">və ya</span>
             <div class="line" style="width: 110px;"></div>
           </div>
-          <form action="./is-elanlari.html">
+          <form action="./registration-3.html">
             <div class="input-container flex items-center mb-4">
               <input
                 type="email"
@@ -97,22 +100,16 @@
               />
               <img src="./assets/icons/eye-slash.svg" alt="" />
             </div>
-            <div
-              class="remember-my-account flex items-center justify-between text-xs"
-            >
-              <label>
-                <input type="checkbox" />
 
-                ⁨⁨Hesabımı xatırla</label
+            <div class="mt-3 mb-8 text-xs">
+              <label>
+                <input type="checkbox" required />
+
+                Şərtlər və qaydaları qəbul edirəm</label
               >
-              <a href="#">Şifrəni unutmusunuz?</a>
             </div>
-            <button type="submit">Daxil ol</button>
+            <button type="submit">Davam et</button>
           </form>
-          <span class="text-xs registration-link"
-            >⁨⁨⁨Hesabın yoxdur?
-            <a href="./registration.html">Qeydiyyatdan keç</a>
-          </span>
         </div>
       </div>
     </div>

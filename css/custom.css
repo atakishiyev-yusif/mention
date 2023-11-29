@@ -223,6 +223,14 @@ h4 {
   border-radius: 20px;
 }
 
+#hero .new-messages {
+  position: absolute;
+  right: 23em;
+  bottom: -2rem;
+  width: 60%;
+  border-radius: 20px;
+}
+
 .open-messages {
   height: 200%;
 }
@@ -385,14 +393,14 @@ footer {
   border-radius: 20px;
 }
 
-.elan-yerlesdir-card button {
+.elan-yerlesdir-card select {
   background-color: var(--black);
   border-radius: 48px;
   padding: 12px 28px;
   color: var(--white);
 }
 
-.son-elanlar-filter button:not(.clear-filters-button) {
+.son-elanlar-filter select:not(.clear-filters-button) {
   background-color: var(--secondary-color);
   border-radius: 100px;
 }
@@ -765,7 +773,6 @@ footer {
 /* chats page */
 
 #chats-page {
-  min-height: 92vh;
+  min-height: 89vh;
   min-width: 100vh;
-  overflow: hidden;
 }

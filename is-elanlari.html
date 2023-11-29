@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="/assets/icons/diagram.svg" />
+    <title>Mention | Is elanlari</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -27,7 +28,7 @@
           <nav class="flex items-center gap-8">
             <a href="./is-elanlari.html">İş elanları</a>
             <a href="./freelancers.html">Frilanserlər</a>
-            <a href="./haqqimizda.html">Haqqımızda</a>
+
             <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
           </nav>
           <div class="flex items-center px-6 px-3">
@@ -37,9 +38,9 @@
               </a>
             </div>
           </div>
-          <div class="profile">
+          <a href="./frilanserin-gorduyu-profile-details.html" class="profile">
             <img src="./assets/icons/profile.svg" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </header>
@@ -77,11 +78,13 @@
               low transaction rates.
             </p>
           </div>
-          <button type="button" class="font-semibold">
-            <a href="./elan-yerlesdir.html">
-              Elan yerləşdir
-            </a>
-          </button>
+          <a
+            href="./elan-yerlesdir.html"
+            style="border-radius: 9999px;"
+            class="font-semibold px-7 py-3 bg-black-color text-white"
+          >
+            Elan yerləşdir
+          </a>
         </div>
 
         <!-- son elanlar -->
@@ -93,78 +96,80 @@
             class="flex items-center justify-between son-elanlar-filter mb-8"
           >
             <div class="flex items-center gap-3">
-              <button
-                class="px-8 py-3 flex items-center justify-between gap-2"
-                type="button"
+              <select
+                class="font-medium px-8 py-3 flex items-center justify-between gap-2"
               >
-                Kateqoriyalar
+                <option>Kateqoriyalar</option>
+                <option>Kateqoriyalar</option>
+                <option>Kateqoriyalar</option>
                 <span>
                   <img
                     src="./assets/icons/arrow-right.svg"
                     alt="arrow-right-icon"
                   />
                 </span>
-              </button>
-              <button
-                class="px-8 py-3 flex items-center justify-between gap-2"
-                type="button"
-              >
-                Əmək haqqı
+              </select>
+              <select class="px-8 py-3 flex items-center justify-between gap-2">
+                <option>Əmək haqqı</option>
+                <option>Əmək haqqı</option>
+                <option>Əmək haqqı</option>
+                <option>Əmək haqqı</option>
                 <span>
                   <img
                     src="./assets/icons/arrow-right.svg"
                     alt="arrow-right-icon"
                   />
                 </span>
-              </button>
-              <button
-                class="px-8 py-3 flex items-center justify-between gap-2"
-                type="button"
-              >
-                Tarix
+              </select>
+              <select class="px-8 py-3 flex items-center justify-between gap-2">
+                <option>Tarix</option>
+                <option>Tarix</option>
+                <option>Tarix</option>
+                <option>Tarix</option>
                 <span>
                   <img
                     src="./assets/icons/arrow-right.svg"
                     alt="arrow-right-icon"
                   />
                 </span>
-              </button>
-              <button
-                class="px-8 py-3 flex items-center justify-between gap-2"
-                type="button"
-              >
-                Müraciət sayı
+              </select>
+              <select class="px-8 py-3 flex items-center justify-between gap-2">
+                <option>Müraciət sayı</option>
+                <option>Müraciət sayı</option>
+                <option>Müraciət sayı</option>
+                <option>Müraciət sayı</option>
                 <span>
                   <img
                     src="./assets/icons/arrow-right.svg"
                     alt="arrow-right-icon"
                   />
                 </span>
-              </button>
-              <button
-                class="px-8 py-3 font-semibold clear-filters-button"
-                type="button"
-              >
+              </select>
+              <a class="px-8 py-3 font-semibold clear-filters-button" href="">
                 Filterləri təmizlə
-              </button>
+              </a>
             </div>
-            <button
+            <select
               class="px-8 py-3 flex items-center justify-between gap-2"
               type="button"
             >
-              Sıralama
+              <option>Sıralama</option>
+              <option>Sıralama</option>
+              <option>Sıralama</option>
+              <option>Sıralama</option>
+              <option>Sıralama</option>
               <span>
                 <img
                   src="./assets/icons/arrow-right.svg"
                   alt="arrow-right-icon"
                 />
               </span>
-            </button>
+            </select>
           </div>
 
           <!-- son elanlar  -->
           <div
-            class="elan-cards flex items-center justify-center flex-wrap gap-6"
+            class="elan-cards flex items-center justify-center flex-wrap gap-6 daha-cox-goster-content"
           >
             <div class="elan-card elan-card-primary py-9 px-12">
               <div class="flex items-center justify-between">
@@ -563,7 +568,9 @@
             </div>
           </div>
           <div class="flex items-center justify-center mt-13">
-            <button type="button" class="dashed-button">Daha çox göstər</button>
+            <button type="button" class="dashed-button daha-cox-goster-button">
+              Daha çox göstər
+            </button>
           </div>
         </section>
       </div>

@@ -11,6 +11,7 @@
   --secondary-color: #e5e5f8;
   --error-color: #ba0000;
 
+  --text-s: 10px;
   --text-xs: 12px;
   --text-sm: 14px;
   --text-base: 16px;
@@ -123,6 +124,10 @@ a {
 
 .text-black {
   color: var(--black);
+}
+
+.text-s {
+  font-size: var(--text-s);
 }
 
 .text-xs {
@@ -522,6 +527,11 @@ a {
 .px-3 {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .px-6 {

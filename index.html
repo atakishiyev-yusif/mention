@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mention | Home</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -19,26 +19,33 @@
     <header class="flex items-center">
       <div class="container flex items-center justify-between p-3">
         <div class="logo">
-          <img src="./assets/images/logo.svg" alt="logo" />
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
         </div>
         <div class="flex items-center gap-5">
           <nav class="flex items-center gap-8">
             <a href="./is-elanlari.html">İş elanları</a>
             <a href="./freelancers.html">Frilanserlər</a>
-            <a href="./haqqimizda.html">Haqqımızda</a>
+
             <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
           </nav>
           <div class="header-search flex items-center px-6 px-3">
-            <input type="text" placeholder="Axtarış" class="input" />
+            <input
+              type="text"
+              placeholder="Axtarış"
+              class="input"
+              id="searchInput"
+            />
             <div>
               <a href="./search-page.html">
                 <img src="./assets/icons/search-normal.svg" alt="" />
               </a>
             </div>
           </div>
-          <div class="profile">
+          <a href="./frilanserin-gorduyu-profile-details.html" class="profile">
             <img src="./assets/icons/profile.svg" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </header>
@@ -55,7 +62,9 @@
                   biləcəyi elanların birləşdiyi ilk platforma.
                 </p>
                 <button type="button" class="dashed-button">
-                  Frilanser ol
+                  <a href="./login.html">
+                    Frilanser ol
+                  </a>
                 </button>
               </div>
             </div>
@@ -92,20 +101,31 @@
                     İşini görə biləcək frilanser yazar axtarırsan?
                   </span>
                   <button type="button" class="dashed-button">
-                    Elan yerləşdir
+                    <a href="./elan-yerlesdir.html">
+                      Elan yerləşdir
+                    </a>
                   </button>
                 </div>
-                <div class="flex items-center">
+                <div class="flex">
                   <div class="messages bg-white-color">
                     <div
                       class="flex items-center justify-between messages-title bg-secondary-color-2 px-5 py-6"
-                      style="border-radius: 20px 20px 0px 0px;"
+                      style="
+                        border-radius: 20px 20px 0px 0px;
+                        transition: 0.5s;
+                      "
                     >
                       <div class="flex items-center gap-3">
                         <div class="message-icon">
                           <img
                             src="./assets/icons/messages-2.svg"
+                            class="dark-message-icon"
                             alt="messages-icon"
+                          />
+                          <img
+                            src="./assets/icons/light-message-icon.svg"
+                            class="light-message-icon hidden"
+                            alt=""
                           />
                         </div>
                         <div class="font-bold">
@@ -118,14 +138,28 @@
                             <img
                               src="./assets/icons/maximize-icon.svg"
                               alt="maximize-icon"
+                              class="dark-maximize-icon"
+                            />
+                            <img
+                              src="./assets/icons/light-maximize-icon.svg"
+                              class="light-maximize-icon hidden"
+                              alt=""
                             />
                           </a>
                         </div>
                         <div class="message-edit-icon">
-                          <img
-                            src="./assets/icons/message-edit.svg"
-                            alt="message-edit-icon"
-                          />
+                          <a href="./current-chat.html">
+                            <img
+                              src="./assets/icons/message-edit.svg"
+                              alt="message-edit-icon"
+                              class="dark-edit-icon"
+                            />
+                            <img
+                              src="./assets/icons/light-edit-icon.svg"
+                              class="light-edit-icon hidden"
+                              alt=""
+                            />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -144,7 +178,7 @@
                           />
                         </div>
                       </div>
-                      <a href="./current-chat.html">
+                      <a id="message-item" style="cursor: pointer;">
                         <div
                           class="all-chats-card py-5 px-6 bg-secondary-color-2 flex justify-between"
                         >
@@ -166,7 +200,7 @@
                         </div>
                       </a>
 
-                      <a href="./current-chat.html">
+                      <a id="message-item" style="cursor: pointer;">
                         <div
                           class="all-chats-card py-5 px-6 flex justify-between"
                         >
@@ -187,6 +221,127 @@
                           <span class="text-xs">7 Avq</span>
                         </div></a
                       >
+
+                      <a id="message-item" style="cursor: pointer;">
+                        <div
+                          class="all-chats-card py-5 px-6 bg-secondary-color-2 flex justify-between"
+                        >
+                          <div class="flex items-center gap-3">
+                            <div class="profile-sm bg-black-color">
+                              <img
+                                src="./assets/icons/profile.svg"
+                                alt="profile-icon"
+                              />
+                            </div>
+                            <div class="flex flex-col">
+                              <span class="font-semibold">Fidan Zeynallı</span>
+                              <span class="text-xs font-normal"
+                                >Başqa sualınız var?</span
+                              >
+                            </div>
+                          </div>
+                          <span class="text-xs">7 Avq</span>
+                        </div>
+                      </a>
+
+                      <a id="message-item" style="cursor: pointer;">
+                        <div
+                          class="all-chats-card py-5 px-6 flex justify-between"
+                        >
+                          <div class="flex items-center gap-3">
+                            <div class="profile-sm bg-black-color">
+                              <img
+                                src="./assets/icons/profile.svg"
+                                alt="profile-icon"
+                              />
+                            </div>
+                            <div class="flex flex-col">
+                              <span class="font-semibold">Fidan Zeynallı</span>
+                              <span class="text-xs font-normal"
+                                >Siz: Xeyr, yoxdur.</span
+                              >
+                            </div>
+                          </div>
+                          <span class="text-xs">7 Avq</span>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                  <div class="bg-secondary-color-2 new-messages hidden">
+                    <div
+                      class="flex items-center justify-between bg-primary-color py-4 px-6"
+                      style="border-radius: 20px 20px 0px 0px;"
+                    >
+                      <div
+                        class="flex items-center gap-3 text-white font-semibold new-messages-title"
+                      >
+                        <div class="edit-icon">
+                          <img
+                            src="./assets/icons/light-edit-icon.svg"
+                            alt="message-edit-icon"
+                          />
+                        </div>
+                        Yeni mesaj göndər
+                      </div>
+                      <a href="./new-message.html" class="">
+                        <img
+                          src="./assets/icons/maximize-icon.svg"
+                          alt="maximize-icon"
+                          class="dark-maximize-icon-2"
+                        />
+                        <img
+                          src="./assets/icons/light-maximize-icon.svg"
+                          class="light-maximize-icon-2 hidden"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="bg-white-color py-4 px-6 current-user-input">
+                      <input
+                        type="text"
+                        class="input"
+                        placeholder="Adı Soyadı"
+                      />
+                    </div>
+                    <div
+                      class="px-2 py-2"
+                      style="min-height: 200px; height: 200px; overflow: auto;"
+                    ></div>
+                    <div
+                      class="messages-content new-messages-content px-3 py-4"
+                    >
+                      <div class="flex items-center justify-between gap-4">
+                        <div
+                          class="bg-white-color px-4 py-2"
+                          style="border-radius: 10px;"
+                        >
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Mesajı bura yazın"
+                          />
+                        </div>
+                        <div class="flex items-center gap-3">
+                          <div class="">
+                            <img
+                              src="./assets/icons/gallery-add.svg"
+                              alt="gallery-add-icon"
+                            />
+                          </div>
+                          <div class="">
+                            <img
+                              src="./assets/icons/microphone.svg"
+                              alt="gallery-add-icon"
+                            />
+                          </div>
+                          <a href="./current-chat.html" class="send-button">
+                            <img
+                              src="./assets/icons/send.svg"
+                              alt="send-icon"
+                            />
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

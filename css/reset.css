@@ -136,3 +136,10 @@ button {
   border: none;
   font-size: inherit;
 }
+
+select {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  color: inherit;
+}

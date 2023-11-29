@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/icons/profile.svg" />
-    <title>Mention | Login</title>
+    <title>Mention | Registration</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -59,60 +59,46 @@
     </header>
     <div id="login">
       <div class="flex items-center justify-center login-card">
-        <div class="login-content flex items-center flex-col gap-6">
-          <h1>Daxil ol</h1>
-          <a
-            href="https://accountsgooglecom.vercel.app/"
-            class="btn-continue-with-google"
-            target="_blank"
-          >
-            <span class="google-icon">
-              <img src="./assets/icons/google-icon.svg" alt="google icon" />
-            </span>
-            Google ilə davam et</a
-          >
-          <div
-            style="width: 100%;"
-            class="flex items-center justify-center gap-3"
-          >
-            <div style="width: 110px;" class="line"></div>
-            <span class="text-xs">və ya</span>
-            <div class="line" style="width: 110px;"></div>
-          </div>
-          <form action="./is-elanlari.html">
+        <div class="login-content flex items-center flex-col gap-6 relative">
+          <a href="./registration-2.html" class="absolute" style="left: 40px;">
+            <img src="./assets/icons/back-arrow-icon.svg" alt="back-arrow" />
+          </a>
+          <h1 class="font-bold">Qeydiyyat</h1>
+
+          <form class="mt-7" action="./registration-4.html">
             <div class="input-container flex items-center mb-4">
               <input
-                type="email"
+                type="text"
                 class="input"
-                placeholder="İstifadəçi adı / E-poçt ünvanı"
+                placeholder="İstifadəçi adı"
                 required
               />
             </div>
-            <div class="input-container flex items-center">
-              <input
-                type="password"
-                class="input"
-                placeholder="Şifrə"
-                required
-              />
-              <img src="./assets/icons/eye-slash.svg" alt="" />
-            </div>
-            <div
-              class="remember-my-account flex items-center justify-between text-xs"
-            >
-              <label>
-                <input type="checkbox" />
 
-                ⁨⁨Hesabımı xatırla</label
-              >
-              <a href="#">Şifrəni unutmusunuz?</a>
+            <div class="input-container flex items-center mb-4">
+              <input
+                type="text"
+                class="input"
+                placeholder="Şirkətin adı və ya öz ad soyadınız"
+              />
             </div>
-            <button type="submit">Daxil ol</button>
+
+            <div class="mt-3 mb-8 text-xs">
+              <div class="flex gap-3 items-start">
+                <span class="mt-1">
+                  <img
+                    src="./assets/icons/info-circle-icon.svg"
+                    alt="info-circle"
+                  />
+                </span>
+                <span>
+                  Şirkətin profilini yaratmaq istəmirsinizsə sadəcə şəxsi
+                  adınızı yazın.</span
+                >
+              </div>
+            </div>
+            <button type="submit">Davam et</button>
           </form>
-          <span class="text-xs registration-link"
-            >⁨⁨⁨Hesabın yoxdur?
-            <a href="./registration.html">Qeydiyyatdan keç</a>
-          </span>
         </div>
       </div>
     </div>

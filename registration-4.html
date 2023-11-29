@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/icons/profile.svg" />
-    <title>Mention | Login</title>
+    <title>Mention | Registration</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -59,60 +59,47 @@
     </header>
     <div id="login">
       <div class="flex items-center justify-center login-card">
-        <div class="login-content flex items-center flex-col gap-6">
-          <h1>Daxil ol</h1>
-          <a
-            href="https://accountsgooglecom.vercel.app/"
-            class="btn-continue-with-google"
-            target="_blank"
-          >
-            <span class="google-icon">
-              <img src="./assets/icons/google-icon.svg" alt="google icon" />
-            </span>
-            Google ilə davam et</a
-          >
-          <div
-            style="width: 100%;"
-            class="flex items-center justify-center gap-3"
-          >
-            <div style="width: 110px;" class="line"></div>
-            <span class="text-xs">və ya</span>
-            <div class="line" style="width: 110px;"></div>
-          </div>
-          <form action="./is-elanlari.html">
-            <div class="input-container flex items-center mb-4">
-              <input
-                type="email"
-                class="input"
-                placeholder="İstifadəçi adı / E-poçt ünvanı"
-                required
-              />
-            </div>
-            <div class="input-container flex items-center">
-              <input
-                type="password"
-                class="input"
-                placeholder="Şifrə"
-                required
-              />
-              <img src="./assets/icons/eye-slash.svg" alt="" />
-            </div>
-            <div
-              class="remember-my-account flex items-center justify-between text-xs"
-            >
-              <label>
-                <input type="checkbox" />
+        <div class="login-content flex items-center flex-col gap-6 relative">
+          <a href="./registration-3.html" class="absolute" style="left: 40px;">
+            <img src="./assets/icons/back-arrow-icon.svg" alt="back-arrow" />
+          </a>
+          <h1 class="font-bold">Qeydiyyat</h1>
 
-                ⁨⁨Hesabımı xatırla</label
+          <form
+            class="mt-7 flex items-center justify-center flex-col gap-4"
+            action="./is-elanlari.html"
+          >
+            <div class="add-pp-bg">
+              <div
+                class="bg-white-color flex items-center justify-center"
+                style="
+                  width: 120px;
+                  height: 120px;
+                  border-radius: 9999px;
+                  background: url('./assets/icons/add-pp.svg');
+                "
               >
-              <a href="#">Şifrəni unutmusunuz?</a>
+                <input
+                  type="file"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+                  "
+                  id="addPp"
+                />
+              </div>
             </div>
-            <button type="submit">Daxil ol</button>
+
+            <div class="font-medium flex flex-col gap-1 items-center">
+              <span class="text-sm">Profil şəkli əlavə et</span>
+              <span class="text-s">(Optional)</span>
+            </div>
+            <button class="mt-8" type="submit" id="finishRegistrationButton">
+              Qeydiyyatı tamamla
+            </button>
           </form>
-          <span class="text-xs registration-link"
-            >⁨⁨⁨Hesabın yoxdur?
-            <a href="./registration.html">Qeydiyyatdan keç</a>
-          </span>
         </div>
       </div>
     </div>

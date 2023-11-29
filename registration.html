@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="/assets/icons/profile.svg" />
+    <title>Mention | Registration</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -30,16 +31,21 @@
             <a href="./login.html">Elan yerləşdir</a>
           </nav>
           <div class="header-search flex items-center px-6 px-3">
-            <input type="text" placeholder="Axtarış" class="input" />
+            <input
+              type="text"
+              placeholder="Axtarış"
+              class="input"
+              id="searchInput"
+            />
             <div>
               <a href="./search-page.html">
                 <img src="./assets/icons/search-normal.svg" alt="" />
               </a>
             </div>
           </div>
-          <div class="profile">
+          <a href="./frilanserin-gorduyu-profile-details.html" class="profile">
             <img src="./assets/icons/profile.svg" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </header>
@@ -54,27 +60,30 @@
             ⁨⁨Müştəri və ya frilanser olaraq qeydiyyatdan keç
           </p>
 
-          <div class="flex items-center gap-4">
-            <div
-              id="registration-box-customer"
-              class="registration-box primary-registration-box flex items-center justify-center"
-            >
-              <span>
-                Elan paylaşmaq istəyirəm.
-              </span>
+          <a href="./registration-2.html">
+            <div class="flex items-center gap-4">
+              <div
+                id="registration-box-customer"
+                class="registration-box primary-registration-box flex items-center justify-center"
+              >
+                <span>
+                  Elan paylaşmaq istəyirəm.
+                </span>
+              </div>
+              <div
+                id="registration-box-freelancer"
+                class="registration-box secondary-registration-box flex items-center justify-center"
+              >
+                <span>
+                  Frilans iş tapmaq istəyirəm.
+                </span>
+              </div>
             </div>
-            <div
-              id="registration-box-freelancer"
-              class="registration-box secondary-registration-box flex items-center justify-center"
-            >
-              <span>
-                Frilans iş tapmaq istəyirəm.
-              </span>
-            </div>
-          </div>
+          </a>
+
           <span class="text-xs registration-link"
-            >⁨⁨⁨Hesabın yoxdur?
-            <a href="./login.html">Hesabın var? Daxil ol</a>
+            >Hesabın var?
+            <a href="./login.html"> Daxil ol</a>
           </span>
         </div>
       </div>

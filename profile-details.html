@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="/assets/icons/profile.svg" />
+    <title>Mention | Profile</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -19,26 +20,33 @@
     <header class="flex items-center">
       <div class="container flex items-center justify-between p-3">
         <div class="logo">
-          <img src="./assets/images/logo.svg" alt="logo" />
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
         </div>
         <div class="flex items-center gap-5">
           <nav class="flex items-center gap-8">
             <a href="./is-elanlari.html">İş elanları</a>
             <a href="./freelancers.html">Frilanserlər</a>
-            <a href="./haqqimizda.html">Haqqımızda</a>
+
             <a href="./elan-yerlesdir.html">Elan yerləşdir</a>
           </nav>
           <div class="header-search flex items-center px-6 px-3">
-            <input type="text" placeholder="Axtarış" class="input" />
+            <input
+              type="text"
+              placeholder="Axtarış"
+              class="input"
+              id="searchInput"
+            />
             <div>
               <a href="./search-page.html">
                 <img src="./assets/icons/search-normal.svg" alt="" />
               </a>
             </div>
           </div>
-          <div class="profile">
+          <a href="./frilanserin-gorduyu-profile-details.html" class="profile">
             <img src="./assets/icons/profile.svg" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </header>
@@ -48,7 +56,7 @@
         <div class="breadcrumb">
           <a href="/">Ana səhifə</a>
           <span>/</span>
-          <a href="#">Frilanserlər</a>
+          <a href="./freelancers.html">Frilanserlər</a>
           <span>/</span>
           <a href="#" class="active">Profil detalları</a>
         </div>
@@ -63,9 +71,13 @@
             </div>
             <span class="text-sm">@fidanzeynalli</span>
 
-            <button type="button" class="dashed-button dashed-button-primary">
+            <a
+              href="./current-chat.html"
+              type="button"
+              class="dashed-button dashed-button-primary"
+            >
               Mesaj yaz
-            </button>
+            </a>
           </div>
         </div>
 
@@ -181,98 +193,107 @@
         <div class="mt-15">
           <h2 class="mb-5">Təsdiqlənmiş frilans işlər</h2>
           <div class="flex flex-wrap gap-6">
-            <div
-              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
-            >
-              <div class="flex items-center justify-between">
-                <div class="company flex items-center gap-2 pt-5">
-                  <div class="company-profile">
-                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+            <a href="./musteri-profile-details.html">
+              <div
+                class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="company flex items-center gap-2 pt-5">
+                    <div class="company-profile">
+                      <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                    </div>
+                    <div class="text-sm font-semibold">Şirkətin adı</div>
                   </div>
-                  <div class="text-sm font-semibold">Şirkətin adı</div>
-                </div>
-                <div class="p-3 flex items-center justify-center">
-                  <span class="category-card category-card-primary"
-                    >Məqalə/Bloq</span
-                  >
-                </div>
-              </div>
-              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
-              <p class="mb-8">
-                Looking for an experienced online editor to help oversee the
-                content and team for a blog talking about digital marketing and
-                advertisin…
-              </p>
-            </div>
-            <div
-              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
-            >
-              <div class="flex items-center justify-between">
-                <div class="company flex items-center gap-2 pt-5">
-                  <div class="company-profile">
-                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  <div class="p-3 flex items-center justify-center">
+                    <span class="category-card category-card-primary"
+                      >Məqalə/Bloq</span
+                    >
                   </div>
-                  <div class="text-sm font-semibold">Şirkətin adı</div>
                 </div>
-                <div class="p-3 flex items-center justify-center">
-                  <span class="category-card category-card-primary"
-                    >Məqalə/Bloq</span
-                  >
-                </div>
+                <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+                <p class="mb-8">
+                  Looking for an experienced online editor to help oversee the
+                  content and team for a blog talking about digital marketing
+                  and advertisin…
+                </p>
               </div>
-              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
-              <p class="mb-8">
-                Looking for an experienced online editor to help oversee the
-                content and team for a blog talking about digital marketing and
-                advertisin…
-              </p>
-            </div>
-            <div
-              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
-            >
-              <div class="flex items-center justify-between">
-                <div class="company flex items-center gap-2 pt-5">
-                  <div class="company-profile">
-                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+            </a>
+            <a href="./musteri-profile-details.html">
+              <div
+                class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="company flex items-center gap-2 pt-5">
+                    <div class="company-profile">
+                      <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                    </div>
+                    <div class="text-sm font-semibold">Şirkətin adı</div>
                   </div>
-                  <div class="text-sm font-semibold">Şirkətin adı</div>
-                </div>
-                <div class="p-3 flex items-center justify-center">
-                  <span class="category-card category-card-primary"
-                    >Məqalə/Bloq</span
-                  >
-                </div>
-              </div>
-              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
-              <p class="mb-8">
-                Looking for an experienced online editor to help oversee the
-                content and team for a blog talking about digital marketing and
-                advertisin…
-              </p>
-            </div>
-            <div
-              class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
-            >
-              <div class="flex items-center justify-between">
-                <div class="company flex items-center gap-2 pt-5">
-                  <div class="company-profile">
-                    <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                  <div class="p-3 flex items-center justify-center">
+                    <span class="category-card category-card-primary"
+                      >Məqalə/Bloq</span
+                    >
                   </div>
-                  <div class="text-sm font-semibold">Şirkətin adı</div>
                 </div>
-                <div class="p-3 flex items-center justify-center">
-                  <span class="category-card category-card-primary"
-                    >Məqalə/Bloq</span
-                  >
-                </div>
+                <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+                <p class="mb-8">
+                  Looking for an experienced online editor to help oversee the
+                  content and team for a blog talking about digital marketing
+                  and advertisin…
+                </p>
               </div>
-              <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
-              <p class="mb-8">
-                Looking for an experienced online editor to help oversee the
-                content and team for a blog talking about digital marketing and
-                advertisin…
-              </p>
-            </div>
+            </a>
+            <a href="./musteri-profile-details.html">
+              <div
+                class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="company flex items-center gap-2 pt-5">
+                    <div class="company-profile">
+                      <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                    </div>
+                    <div class="text-sm font-semibold">Şirkətin adı</div>
+                  </div>
+                  <div class="p-3 flex items-center justify-center">
+                    <span class="category-card category-card-primary"
+                      >Məqalə/Bloq</span
+                    >
+                  </div>
+                </div>
+                <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+                <p class="mb-8">
+                  Looking for an experienced online editor to help oversee the
+                  content and team for a blog talking about digital marketing
+                  and advertisin…
+                </p>
+              </div>
+            </a>
+
+            <a href="./musteri-profile-details.html">
+              <div
+                class="elan-card elan-card-secondary tesdiqlenmis-frilans-is py-9 px-12"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="company flex items-center gap-2 pt-5">
+                    <div class="company-profile">
+                      <img src="./assets/icons/profile-sm.svg" alt="profile" />
+                    </div>
+                    <div class="text-sm font-semibold">Şirkətin adı</div>
+                  </div>
+                  <div class="p-3 flex items-center justify-center">
+                    <span class="category-card category-card-primary"
+                      >Məqalə/Bloq</span
+                    >
+                  </div>
+                </div>
+                <h4 class="mb-3">Senior Editor for Advertising Blog</h4>
+                <p class="mb-8">
+                  Looking for an experienced online editor to help oversee the
+                  content and team for a blog talking about digital marketing
+                  and advertisin…
+                </p>
+              </div></a
+            >
             <button
               type="button"
               class="dashed-button dashed-button-primary flex items-center justify-center mx-auto mt-10"
